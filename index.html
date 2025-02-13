@@ -3,7 +3,308 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <title>SoundHive</title>
+      <link rel="stylesheet" href="./src/styles/pages/common.css" />
+      <link rel="stylesheet" href="./src/styles/layout/layout.css" />
+      <link rel="stylesheet" href="./src/styles/components/button.css" />
+      <link rel="stylesheet" href="./src/styles/components/form.css" />
+      <link rel="stylesheet" href="./src/styles/components/label.css" />
+      <link rel="stylesheet" href="./src/styles/components/swiper.css" />
    </head>
-   <body></body>
+   <body>
+      <div class="wrap">
+         <div class="header">
+            <div class="header__title">
+               <a href="#">
+                  <h1>SoundHive</h1>
+                  <img src="./src/images/header/logo.png" alt="로고" />
+               </a>
+            </div>
+            <div class="header__nav">
+               <ul>
+                  <li>
+                     <a href="#">
+                        <span>Find music</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <span>Categories</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <span>Top Artists</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <span>Your Collection</span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="header__trial-button">
+               <button type="button">
+                  <span>Free Trial</span>
+               </button>
+            </div>
+         </div>
+         <!-- 헤더 -->
+
+         <div class="container">
+            <section class="music">
+               <div class="music__intro">
+                  <div class="music__intro__title">
+                     <h2>Music.</h2>
+                     <h2>My Life.</h2>
+                  </div>
+                  <div class="music__intro__find">
+                     <label for="music__intro__find--input">
+                        <input type="text" class="music__intro__find--input" placeholder="Find your music" />
+                        <a href="#">
+                           <span>Go</span>
+                        </a>
+                     </label>
+                  </div>
+               </div>
+               <div class="music__cards">
+                  <div class="music__cards__item">
+                     <a href="#">
+                        <div class="music__cards__item--img">
+                           <img src="./src/images/music/find_music_01.jpg" alt="추천100곡" />
+                        </div>
+                        <div class="music__cards__item--info">
+                           <span>Top 100</span>
+                           <span>Music</span>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="music__cards__item">
+                     <a href="#">
+                        <div class="music__cards__item--img">
+                           <img src="./src/images/music/find_music_02.jpg" alt="최신음악" />
+                        </div>
+                        <div class="music__cards__item--info">
+                           <span>New</span>
+                           <span>Music</span>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="music__cards__item">
+                     <a href="#">
+                        <div class="music__cards__item--img">
+                           <img src="./src/images/music/find_music_03.jpg" alt="트렌디 음악" />
+                        </div>
+                        <div class="music__cards__item--info">
+                           <span>Trendy</span>
+                           <span>Music</span>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </section>
+            <section class="categories">
+               <div class="categories__title">
+                  <h3>Music categories</h3>
+               </div>
+               <div class="categories__tab">
+                  <ul>
+                     <li class="active">
+                        <a href="#">
+                           <span>All categories</span>
+                        </a>
+                        <div class="categories__tab__content">
+                           <ul>
+                              <li>
+                                 <a href="#">
+                                    <img src="./src/images/categories/categories_01.jpg" alt="팝송" />
+                                    <span>Pop-song</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <img src="./src/images/categories/categories_02.jpg" alt="힙합합" />
+                                    <span>Hip-hop</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <img src="./src/images/categories/categories_03.jpg" alt="트로트" />
+                                    <span>Trot</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <img src="./src/images/categories/categories_04.jpg" alt="한국음악악" />
+                                    <span>K-pop</span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </li>
+                     <!-- categories 탭 아이템 -->
+                     <li>
+                        <a href="#">
+                           <span>New</span>
+                        </a>
+                        <div class="categories__tab__content">
+                           <ul>
+                              <li>
+                                 <a href="#">
+                                    <img src="./src/images/categories/categories_02.jpg" alt="팝송" />
+                                    <span>Pop-song</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <img src="./src/images/categories/categories_01.jpg" alt="힙합합" />
+                                    <span>Hip-hop</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <img src="./src/images/categories/categories_04.jpg" alt="트로트" />
+                                    <span>Trot</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <img src="./src/images/categories/categories_03.jpg" alt="한국음악" />
+                                    <span>K-pop</span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <span>Entertainment</span>
+                        </a>
+                        <div class="categories__tab__content">
+                           <ul>
+                              <li>
+                                 <a href="#">
+                                    <img src="./src/images/categories/categories_01.jpg" alt="팝송" />
+                                    <span>Pop-song</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <img src="./src/images/categories/categories_03.jpg" alt="힙합합" />
+                                    <span>Hip-hop</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <img src="./src/images/categories/categories_04.jpg" alt="트로트" />
+                                    <span>Trot</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <img src="./src/images/categories/categories_02.jpg" alt="한국음악" />
+                                    <span>K-pop</span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </section>
+            <section class="artists">
+               <div class="artists__info">
+                  <h3>Top Artists</h3>
+                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laudantium quam nesciunt laborum incidunt, ipsam temporibus obcaecati ipsa autem molestiae, natus repudiandae quae recusandae aliquam, et rem suscipit dolore asperiores.</span>
+               </div>
+               <div class="artists__video">
+                  <iframe
+                     width="560"
+                     height="315"
+                     src="https://www.youtube.com/embed/fLi0EJfi_vg?si=BFEbcbn7OfdaEgzc"
+                     title="YouTube video player"
+                     frameborder="0"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                     referrerpolicy="strict-origin-when-cross-origin"
+                     allowfullscreen
+                  ></iframe>
+               </div>
+            </section>
+            <section class="collection">
+               <div class="collection__title">
+                  <h3>Your Collection</h3>
+               </div>
+               <div class="collection__swiper">
+                  <ul>
+                     <li>
+                        <div class="collection__text">
+                           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nostrum doloremque nemo blanditiis quibusdam at excepturi dolor, eum similique, quisquam omnis animi eius ullam nesciunt reiciendis aliquam illo quos error.</span>
+                        </div>
+                        <div class="collection__artist__info">
+                           <img src="./src/images/collection/collection_01.jpg" alt="아티스트" />
+                           <p>
+                              <span class="artists__info--name">Drew puth</span>
+                              <span class="artists__info--country">USA</span>
+                           </p>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="collection__text">
+                           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nostrum doloremque nemo blanditiis quibusdam at excepturi dolor, eum similique, quisquam omnis animi eius ullam nesciunt reiciendis aliquam illo quos error.</span>
+                        </div>
+                        <div class="collection__artist__info">
+                           <img src="./src/images/collection/collection_02.jpg" alt="아티스트" />
+                           <p>
+                              <span class="artists__info--name">Drew puth</span>
+                              <span class="artists__info--country">USA</span>
+                           </p>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="collection__text">
+                           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nostrum doloremque nemo blanditiis quibusdam at excepturi dolor, eum similique, quisquam omnis animi eius ullam nesciunt reiciendis aliquam illo quos error.</span>
+                        </div>
+                        <div class="collection__artist__info">
+                           <img src="./src/images/collection/collection_03.jpg" alt="아티스트" />
+                           <p>
+                              <span class="artists__info--name">Drew puth</span>
+                              <span class="artists__info--country">USA</span>
+                           </p>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="collection__text">
+                           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nostrum doloremque nemo blanditiis quibusdam at excepturi dolor, eum similique, quisquam omnis animi eius ullam nesciunt reiciendis aliquam illo quos error.</span>
+                        </div>
+                        <div class="collection__artist__info">
+                           <img src="./src/images/collection/collection_01.jpg" alt="아티스트" />
+                           <p>
+                              <span class="artists__info--name">Drew puth</span>
+                              <span class="artists__info--country">USA</span>
+                           </p>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="collection__text">
+                           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nostrum doloremque nemo blanditiis quibusdam at excepturi dolor, eum similique, quisquam omnis animi eius ullam nesciunt reiciendis aliquam illo quos error.</span>
+                        </div>
+                        <div class="collection__artist__info">
+                           <img src="./src/images/collection/collection_02.jpg" alt="아티스트" />
+                           <p>
+                              <span class="artists__info--name">Drew puth</span>
+                              <span class="artists__info--country">USA</span>
+                           </p>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </section>
+         </div>
+         <!-- 본문 -->
+
+         <div class="footer"></div>
+         <!-- 바닥글 -->
+      </div>
+   </body>
 </html>
