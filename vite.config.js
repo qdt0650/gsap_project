@@ -6,4 +6,7 @@ export default defineConfig({
       open: true,
    },
    base: '/interactive_publishing/',
+   build: {
+      outDir: 'dist',
+   },
 })

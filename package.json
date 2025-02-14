@@ -6,5 +6,8 @@
    "dependencies": {
       "gh-pages": "^6.3.0"
    },
-   "homepage": "https://qdt0650.github.io/interactive_publishing/"
+   "homepage": "https://qdt0650.github.io/interactive_publishing/",
+   "devDependencies": {
+      "vite": "^6.1.0"
+   }
 }
